@@ -23,7 +23,7 @@ async function connectToWhatsApp() {
 
   if (usePairingCode && !lenwy.authState.creds.registered) {
     console.log("Masukkan Nomor WA (awali dengan 62):")
-    const phoneNumber = await question("> ")
+    const phoneNumber = "6285187239247"
     const code = await lenwy.requestPairingCode(phoneNumber.trim())
     console.log("Pairing Code: " + code)
   }
